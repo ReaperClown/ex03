@@ -8,14 +8,12 @@ html {
 }
 
 body {
-  /* padding: 0 180px; */
+  padding: 0 180px;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 0.5fr, repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 1150px;
-  margin: 0 auto;
 }
 
 header {
@@ -40,7 +38,8 @@ header h1 {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 1150px;
+  width: 1365px; /* Alternativo: 71vw */
+  max-width: 1365px;
 }
 
 figure {
@@ -55,9 +54,11 @@ nav ul {
   list-style: none;
   padding: 10px 0;
   float: left;
+  margin-left: 92px;
 }
 
 nav ul li {
+  /* margin: 10px 0; */
   border-top: 1px solid #000;
   width: 100px;
   padding: 6px 10px;
@@ -76,8 +77,10 @@ nav ul li a {
 
 main {
   grid-area: 2 / 2 / 3 / 3;
-  padding: 0 40px;
-  width: 800px;
+  width: 92%;
+  max-width: 92%;
+  margin-left: 35px;
+  margin-top: 5px;
 }
 
 main h1 {
@@ -107,7 +110,7 @@ main p img {
 aside {
   grid-area: 2 / 3 / 3 / 4;
   font-size: 0.969em;
-  margin-right: 2px;
+  margin-right: 92px;
 }
 
 article h2 {
@@ -149,7 +152,13 @@ footer {
   position: absolute;
   top: 800px;
   margin: 0 auto;
-  width: 1150px;
+  width: 1365px;
+  max-width: 1365px;
   font-weight: 900;
   font-size: .9em;
+  transform: translateX(89px);
+  -webkit-transform: translateX(89px);
+  -moz-transform: translateX(89px);
+  -ms-transform: translateX(89px);
+  -o-transform: translateX(89px);
 }
