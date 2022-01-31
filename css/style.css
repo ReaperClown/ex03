@@ -102,6 +102,7 @@ main p img {
   float: left;
   padding-right: 25px;
   padding-bottom: 12px;
+  width: 320px;
 }
 
 aside {
